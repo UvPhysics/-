@@ -1,0 +1,1660 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>541</width>
+    <height>467</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>541</width>
+    <height>467</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>541</width>
+    <height>467</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>养猪模拟</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>541</width>
+      <height>467</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>467</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>467</height>
+     </size>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="startPage">
+     <widget class="QLabel" name="grey">
+      <property name="geometry">
+       <rect>
+        <x>-60</x>
+        <y>-90</y>
+        <width>911</width>
+        <height>681</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="img/image.qrc">:/img1/grey.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="pigture">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>511</width>
+        <height>471</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="img/image.qrc">:/img1/pigscene.png</pixmap>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="newGame">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>310</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>新游戏</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="continueGame">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>350</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>继续游戏</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="escapeGame">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>390</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>退出</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="styPage">
+     <widget class="QLabel" name="grass">
+      <property name="geometry">
+       <rect>
+        <x>-30</x>
+        <y>-30</y>
+        <width>611</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="img/image.qrc">:/img1/grass.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>405</width>
+        <height>421</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>420</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>425</width>
+        <height>422</height>
+       </size>
+      </property>
+      <property name="tabShape">
+       <enum>QTabWidget::Triangular</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab0024">
+       <attribute name="title">
+        <string>00--&gt;24</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab2549">
+       <attribute name="title">
+        <string>25--&gt;49</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab5074">
+       <attribute name="title">
+        <string>50--&gt;74</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab7599">
+       <attribute name="title">
+        <string>75--&gt;99</string>
+       </attribute>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="day">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>428</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="img/image.qrc">:/img1/clock_08.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="infoButton">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>380</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>统计</string>
+      </property>
+      <property name="icon">
+       <iconset resource="img/image.qrc">
+        <normaloff>:/img1/checkButton.png</normaloff>:/img1/checkButton.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>64</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="logButton">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>330</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>记录</string>
+      </property>
+      <property name="icon">
+       <iconset resource="img/image.qrc">
+        <normaloff>:/img1/logButton.png</normaloff>:/img1/logButton.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>64</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="clearButton">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>280</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>抗疫</string>
+      </property>
+      <property name="icon">
+       <iconset resource="img/image.qrc">
+        <normaloff>:/img1/instant_health.png</normaloff>:/img1/instant_health.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>64</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="illButton">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>230</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>瘟疫</string>
+      </property>
+      <property name="icon">
+       <iconset resource="img/image.qrc">
+        <normaloff>:/img1/poison.png</normaloff>:/img1/poison.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>64</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="saleButton">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>180</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>卖猪</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <selectedon>:/img1/saleButton.png</selectedon>
+       </iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>64</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="buyButton">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>130</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>买猪</string>
+      </property>
+      <property name="icon">
+       <iconset resource="img/image.qrc">
+        <normaloff>:/img1/pigEgg.png</normaloff>:/img1/pigEgg.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="readButton">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>80</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>读取</string>
+      </property>
+      <property name="icon">
+       <iconset resource="img/image.qrc">
+        <normaloff>:/img1/readButton.png</normaloff>:/img1/readButton.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>64</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="saveButton">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>30</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>保存</string>
+      </property>
+      <property name="icon">
+       <iconset resource="img/image.qrc">
+        <normaloff>:/img1/saveButton.png</normaloff>:/img1/saveButton.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>64</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="money">
+      <property name="geometry">
+       <rect>
+        <x>136</x>
+        <y>428</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="img/image.qrc">:/img1/saleButton.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="deathPre">
+      <property name="geometry">
+       <rect>
+        <x>271</x>
+        <y>428</y>
+        <width>34</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="img/image.qrc">:/img1/poison.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="dayValue">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>430</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="moneyValue">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>430</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>56000</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="deathValue">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>430</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>-1</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="timeControl">
+      <property name="geometry">
+       <rect>
+        <x>479</x>
+        <y>430</y>
+        <width>41</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>继续</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="infoPage">
+     <widget class="QToolBox" name="toolBox">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>471</width>
+        <height>467</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="blackInfo">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>471</width>
+         <height>377</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>黑猪统计信息</string>
+       </attribute>
+       <widget class="QLabel" name="black105147">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>111</y>
+          <width>71</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>105--&gt;147:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="black147190">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>151</y>
+          <width>71</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>147--&gt;190:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="black112225">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>253</y>
+          <width>71</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>112--&gt;225:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="black337450">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>330</y>
+          <width>71</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>337--&gt;450:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="black2065">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>31</y>
+          <width>71</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>    20--&gt;65:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="black65105">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>71</y>
+          <width>71</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>  65--&gt;105:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="black0112">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>220</y>
+          <width>71</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>    0--&gt;112:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="black225337">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>290</y>
+          <width>71</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>225--&gt;337:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>10</y>
+          <width>61</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>体重分布</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>190</y>
+          <width>71</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>饲养时间分布</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="blackwbar0">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>36</y>
+          <width>400</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="textFormat">
+         <enum>Qt::AutoText</enum>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="img/image.qrc">:/img1/grass.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="blackwbar1">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>76</y>
+          <width>54</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="img/image.qrc">:/img1/grass.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="blackwbar2">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>116</y>
+          <width>54</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="img/image.qrc">:/img1/grass.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="blackwbar3">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>156</y>
+          <width>54</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="img/image.qrc">:/img1/grass.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="blacktbar0">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>220</y>
+          <width>54</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="img/image.qrc">:/img1/grass.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="blacktbar1">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>258</y>
+          <width>54</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="img/image.qrc">:/img1/grass.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="blacktbar2">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>296</y>
+          <width>54</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="img/image.qrc">:/img1/grass.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="blacktbar3">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>335</y>
+          <width>54</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="img/image.qrc">:/img1/grass.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_b0">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>42</y>
+          <width>31</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>1000</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_b1">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>82</y>
+          <width>31</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>1000</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_b2">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>122</y>
+          <width>31</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>1000</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_b3">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>162</y>
+          <width>31</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>1000</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_b4">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>228</y>
+          <width>31</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>1000</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_b5">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>266</y>
+          <width>31</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>1000</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_b6">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>302</y>
+          <width>31</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>1000</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_b7">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>342</y>
+          <width>31</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>1000</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="whiteInfo">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>471</width>
+         <height>377</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>大花白猪统计信息</string>
+       </attribute>
+       <widget class="QLabel" name="black65105_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>65</y>
+          <width>71</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>  65--&gt;105:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="black0112_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>214</y>
+          <width>71</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>    0--&gt;112:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="black225337_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>284</y>
+          <width>71</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>225--&gt;337:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="whitetbar3">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>329</y>
+          <width>54</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="img/image.qrc">:/img1/grass.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="black2065_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>25</y>
+          <width>71</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>    20--&gt;65:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="black105147_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>105</y>
+          <width>71</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>105--&gt;147:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="whitetbar0">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>214</y>
+          <width>54</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="img/image.qrc">:/img1/grass.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="whitetbar2">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>290</y>
+          <width>54</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="img/image.qrc">:/img1/grass.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="whitewbar0">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>30</y>
+          <width>53</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="img/image.qrc">:/img1/grass.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="whitewbar1">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>70</y>
+          <width>54</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="img/image.qrc">:/img1/grass.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="black112225_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>246</y>
+          <width>71</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>112--&gt;225:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="whitewbar3">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>150</y>
+          <width>54</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="img/image.qrc">:/img1/grass.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="black337450_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>324</y>
+          <width>71</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>337--&gt;450:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="black147190_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>145</y>
+          <width>71</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>147--&gt;190:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>184</y>
+          <width>71</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>饲养时间分布</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>4</y>
+          <width>61</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>体重分布</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="whitetbar1">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>252</y>
+          <width>54</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="img/image.qrc">:/img1/grass.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="whitewbar2">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>110</y>
+          <width>54</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="img/image.qrc">:/img1/grass.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_w0">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>38</y>
+          <width>31</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>1000</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_w1">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>80</y>
+          <width>31</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>1000</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_w2">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>118</y>
+          <width>31</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>1000</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_w3">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>158</y>
+          <width>31</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>1000</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_w4">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>220</y>
+          <width>31</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>1000</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_w5">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>260</y>
+          <width>31</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>1000</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_w6">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>298</y>
+          <width>31</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>1000</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_w7">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>338</y>
+          <width>31</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>1000</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="flowerInfo">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>471</width>
+         <height>377</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>小花猪统计信息</string>
+       </attribute>
+       <widget class="QLabel" name="black65105_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>65</y>
+          <width>71</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>  65--&gt;105:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="black0112_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>214</y>
+          <width>71</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>    0--&gt;112:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="black225337_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>284</y>
+          <width>71</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>225--&gt;337:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="flowertbar3">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>329</y>
+          <width>54</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="img/image.qrc">:/img1/grass.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="black2065_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>25</y>
+          <width>71</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>    20--&gt;65:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="black105147_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>105</y>
+          <width>71</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>105--&gt;147:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="flowertbar0">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>214</y>
+          <width>54</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="img/image.qrc">:/img1/grass.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="flowertbar2">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>290</y>
+          <width>54</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="img/image.qrc">:/img1/grass.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="flowerwbar0">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>30</y>
+          <width>51</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="img/image.qrc">:/img1/grass.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="flowerwbar1">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>70</y>
+          <width>54</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="img/image.qrc">:/img1/grass.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="black112225_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>246</y>
+          <width>71</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>112--&gt;225:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="flowerwbar3">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>150</y>
+          <width>54</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="img/image.qrc">:/img1/grass.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="black337450_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>324</y>
+          <width>71</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>337--&gt;450:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="black147190_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>145</y>
+          <width>71</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>147--&gt;190:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_5">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>184</y>
+          <width>71</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>饲养时间分布</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>4</y>
+          <width>61</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>体重分布</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="flowertbar1">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>252</y>
+          <width>54</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="img/image.qrc">:/img1/grass.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="flowerwbar2">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>110</y>
+          <width>54</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="img/image.qrc">:/img1/grass.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_f0">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>38</y>
+          <width>31</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>1000</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_f1">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>78</y>
+          <width>31</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>1000</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_f2">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>118</y>
+          <width>31</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>1000</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_f3">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>155</y>
+          <width>31</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>1000</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_f4">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>220</y>
+          <width>31</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>1000</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_f5">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>260</y>
+          <width>31</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>1000</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_f6">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>298</y>
+          <width>31</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>1000</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_f7">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>335</y>
+          <width>31</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>1000</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QToolButton" name="backButton">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>400</y>
+        <width>71</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="img/image.qrc">
+        <normaloff>:/img1/goback.png</normaloff>:/img1/goback.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>64</width>
+        <height>64</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="img/image.qrc"/>
+  <include location="img/image.qrc"/>
+ </resources>
+ <connections/>
+</ui>
