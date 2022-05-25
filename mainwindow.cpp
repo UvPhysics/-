@@ -188,6 +188,7 @@ MainWindow::MainWindow(QWidget *parent)
         }
         this->myFarm->farmSetPigNum();
         ui->moneyValue->setText(QString::number(this->myFarm->farmMoney, 'f', 2));
+        ui->dayValue->setText(QString::number(this->myFarm->dayNum));
         //转换页面
         ui->stackedWidget->setCurrentIndex(1);
     });
