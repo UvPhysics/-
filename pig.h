@@ -16,7 +16,7 @@ public:
     int infected=0;
     int infectedDay=0;
     static constexpr int salePrice[3]={15, 6, 7};//卖出xx每kg猪
-    static constexpr int buyPrice[3]={150, 60, 70};//买入xx每个猪
+    static constexpr int buyPrice[3]={525, 210, 245};//买入xx每个猪
     static constexpr double weightMax=150.0;
     static const int growDayMax=360;
     Pig * lastPig=NULL;
